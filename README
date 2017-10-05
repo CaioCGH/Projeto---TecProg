@@ -1,0 +1,17 @@
+Bruna Meneguzzi                         9327136
+Caio Calisto Gaede Hirakawa             7590899
+Ian Silva Galvão                        6817482
+
+Técnicas de Programação - Projeto Batalha
+Primeira Fase
+
+Como executar:
+
+1. No arquivo fatorial.txt há um programa escrito na linguagem de máquina das
+máquinas virtuais. Para gerar o arquivo em C que executará o programa, use
+python montador < fatorial.txt > fatorial.c .
+2. No diretório contendo todos os arquivos do programa, usar o comando make.
+Isso compilará todos os arquivos C, criando os arquivos no formato .o para a
+execução do programa.
+3. Para rodar o programa gerado fatorial.c, usar o comando ./fatorial . O
+programa deverá retornar o fatorial de 8, que é 40320.

@@ -1,0 +1,43 @@
+ #calcula o fatorial de 8
+ #Ou do argumento do primeiro PUSH
+
+  PUSH      8 #main
+  PUSH      0
+  SAVE      0 
+  PUSH      0
+  CALL      7
+  PRN       0
+  END       0
+
+  ALLOC     2 #loop de decrecimo dos fatores do fatorial
+  PUSH      1
+  ADD       0 
+  STL       1
+  DUP       0
+  STL       2
+  PUSH      1
+  EQ        0
+  JIF       23
+  PUSH      1
+  RCE       1
+  PUSH      1
+  SUB       0
+  REST      0
+  FREE      2
+  RET       0 
+  RCE       2
+  PUSH      1
+  SUB       0
+  RCE       1
+  SAVE      0
+  RCE       1
+  CALL      7
+
+  RCE       2 #multiplicacao
+  MUL       0
+  RCE       1
+  PUSH      1
+  SUB       0
+  REST      0
+  FREE      2
+  RET       0
