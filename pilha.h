@@ -1,12 +1,13 @@
 #include "instr.h"
+#include "typedefs.h"
 
 #define PILMAX 99
 
-typedef struct {
+struct Pilha{
   int topo;
   int base;
   OPERANDO val[PILMAX+1];
-} Pilha;
+};
 
 Pilha *cria_pilha();
 void destroi_pilha(Pilha *p);

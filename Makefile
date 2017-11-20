@@ -1,4 +1,12 @@
-fatorial: maq.o pilha.o fatorial.o
+CC     = gcc
+CFLAGS = -Wall -lm
+RM     = rm -rf
 
-clean:
-	rm -f fatorial *.o
+#---------------------------------#
+all: testeJogo FatArena
+
+testeJogo: testeJogo.c arena.c celula.c Coord.c maq.c pilha.c printArena.c
+	$(CC) -o testeJogo $^
+
+FatArena: FatArena.c arena.c celula.c Coord.c maq.c pilha.c printArena.c
+	$(CC) -o FatArena $^
